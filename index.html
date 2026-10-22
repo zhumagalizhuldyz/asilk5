@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 5 – Individual Practice (Tasks 6–10)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Practice Page</h1>
+    <p>Student: Your Full Name · Group: Your Group</p>
+  </header>
+  <main>
+    <section id="task6" aria-labelledby="t6-title">
+      <h2 id="t6-title">Task 6. A counter with click events</h2>
+      <p class="counter-value" id="counter-value" aria-live="polite">0</p>
+      <div class="row">
+        <button type="button" id="btn-increase">Increase</button>
+        <button type="button" id="btn-decrease">Decrease</button>
+        <button type="button" id="btn-reset">Reset</button>
+      </div>
+    </section>
+    <section id="task7" aria-labelledby="t7-title">
+      <h2 id="t7-title">Task 7. Live text preview</h2>
+      <label for="preview-input">Type or paste your text</label>
+      <textarea id="preview-input" rows="3"></textarea>
+      <p class="label">Preview:</p>
+      <p id="preview-text" class="preview empty">Your text will appear here</p>
+      <p>Characters: <strong id="char-count">0</strong></p>
+      <button type="button" id="btn-clear">Clear</button>
+    </section>
+    <section id="task8" aria-labelledby="t8-title">
+      <h2 id="t8-title">Task 8. Change an image with a select control</h2>
+      <label for="image-select">Choose a landscape</label>
+      <select id="image-select">
+        <option value="mountains">Mountains</option>
+        <option value="sea">Sea sunset</option>
+        <option value="forest">Forest</option>
+      </select>
+      <figure>
+        <img id="landscape-img" src="images/mountains.png" alt="Blue mountains under a bright sun" width="640" height="400">
+        <figcaption id="landscape-caption">Mountains</figcaption>
+      </figure>
+    </section>
+    <section id="task9" aria-labelledby="t9-title">
+      <h2 id="t9-title">Task 9. Keyboard events</h2>
+      <form id="key-form">
+        <label for="key-input">Type here (Enter = show, Escape = clear)</label>
+        <input type="text" id="key-input" autocomplete="off">
+      </form>
+      <p>Status: <span id="key-status">No key pressed yet</span></p>
+      <p>Result: <strong id="key-result"></strong></p>
+    </section>
+    <section id="task10" aria-labelledby="t10-title">
+      <h2 id="t10-title">Task 10. Mouse and focus events</h2>
+      <div class="row">
+        <div id="hover-card" class="card" tabindex="0">Interactive card</div>
+        <p id="card-hint">Hover over the card or focus it with Tab.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
